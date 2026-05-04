@@ -1,0 +1,69 @@
+[data-theme="light"] {
+   --color-bg: #ffffff;
+   --color-fg: #000000;
+   --accent-color: #6F0097;
+   --toggle-bg: url('darkmodebg.png');
+   --toggle-color: #000000;
+}
+
+[data-theme="dark"] {
+   --color-bg: #000000;
+   --color-fg: #ffffff;
+   --accent-color: #6F0097;
+    --toggle-bg: url('lightmodebg.png');
+    --toggle-color: #ffffff;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  transition: ease-in-out 0.2s;
+}
+
+a {
+  color: var(--color-fg);
+}
+
+button[data-theme-toggle] {
+  background-image: var(--toggle-bg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+
+  position: fixed;
+  top: 15%;
+
+  right: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  border: none;
+  height: max-content;
+  width: 10vw;
+
+  /* Inner shadow */
+  box-shadow: inset 0 0 5px var(--color-fg);
+}
+
+
+button[data-theme-toggle].activetoggle {
+  background-image: var(--toggle-bg);
+}
+
+button[data-theme-toggle].activetoggle span{
+  transform: translateX(100%);
+  color: var(--toggle-color);
+  z-index: 3;
+  border: solid 0.5px var(--accent-color);
+}
+
+.toggle-switch {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  display: block;
+  background-color: var(--color-fg);
+  border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
+}

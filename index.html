@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="themes.css">
+</head>
+<body>
+    <main> 
+     <button type="button" data-theme-toggle class="theme-toggle"> 
+        <span class="toggle-switch"> </span>
+     </button>
+        <header>
+            <a href="CV-Choice Osadolor (1).docx" download>
+                <button id="dnld">Resume 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="5%" height="5%" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M13 3v9.586l3.5-3.5l1.414 1.414L12 16.414L6.086 10.5L7.5 9.086l3.5 3.5V3h2ZM4.5 14v5h15v-5h2v7h-19v-7h2Z"/>
+                    </svg>
+                </button>
+
+
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+            </nav>
+        </header>
+        
+        <section id="hero">
+           <div id="anchor" style="background-image: url('avatar.png');">
+           <div id="eyes"> 
+                <img class="pupil" src="eye.png" alt="pupil dot" style="left: 30%; bottom: 20%;">
+                <img class="pupil" src="eye.png" alt="pupil dot" style="right: 21%; bottom: 26%;">
+             </div>
+           </div>
+
+
+            <article>
+            <h1>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Choice.", "Developer", "Designer", "Innovator" ]'>
+                 <span class="wrap"></span>
+                 </a>
+            </h1>            
+             <p>Frontend Developer - UX,UI Engineering</p>
+            <button>View my work</button>
+            </article>
+
+        
+
+        </section>
+
+        <section id="about">
+        <article>
+             <h2>About Me</h2>
+            <p style="font-size: 1.4em;">“Computer Science student focused on front-end and UI/UX, with growing experience in full-stack development. I enjoy <span class="mark">building</span> interactive, <span class="mark">creating</span> user-friendly applications and <span class="mark">improving</span> how people experience technology.</p>
+        </article>
+
+        <div class="grid">
+                  <span class="box flex-column"  >
+                    <img src="https://i.pinimg.com/736x/83/2d/ac/832dac09e0d45055beef6e22d6be4a01.jpg" alt="England">
+                    <sub>Location: Hover to see more</sub> 
+                    <article>
+                        <h2>England</h2>
+                        <sub> 52.3555° N, 1.1743° W</sub>  
+                        <sub>UTC+1</sub>
+                    </article>
+
+                </span>
+
+                <span class="box flex-column" >
+                    <Sub>Education: Hover for more</Sub>
+                    <h2>AU Birmingham</h2>
+                    <h3 style="color: rgb(160, 160, 255);">Bachelors of Science in Computer Science</h3>
+                    <sub>2024-2028</sub>
+                </span>
+                <span class="box flex-column" > 
+                    <sub>Skills</sub>
+                    HTML, CSS, JavaScript, Python
+                </span>
+                
+ 
+        </div>
+  
+
+        </section>
+
+        <section id="projects" class="flex-row">
+            <article>
+                <h2>Projects</h2>
+                <p>Here are some of my recent projects:</p>
+            </article>
+
+        
+            <div class="card">
+                <img src="veltrix.png" alt="Project 1">
+                <article>
+                    <h3>Veltrix</h3>
+                    <p>Digital Gaming Hub and Marketplace</p>
+                </article>
+                <span class="tags">React, Node.js, MongoDB</span>
+            </div>
+           
+            <div class="card">
+                <img src="deal.png" alt="Project 2">
+                <article>
+                    <h3>Deal!</h3>
+                    <p>Multiplayer card web game</p>
+                </article>
+                <span class="tags">HTML, CSS, JavaScript</span>
+            </div>
+
+            <div class="card">
+                <img src="EcoLens.png" alt="Project 3">
+                <article>
+                    <h3>EcoLens</h3>
+                    <p>Sustainability Shopping Assistant App prototype</p>
+                </article>
+                <span class="tags">Figma</span>
+            </div>
+
+            <div class="card">
+                    <img src="Pomdoro.png" alt="Project 4">
+                    <article>
+                        <h3>Pomdoro</h3>
+                        <p>Productivity timer application</p>
+                    </article>
+                    <span class="tags">Blender, HTML,CSS, Three.js</span>
+            </div>
+        </section>
+
+    </main>  
+    <script src="animations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

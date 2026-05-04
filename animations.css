@@ -1,0 +1,84 @@
+/* Underline styles */
+a {
+  position: relative;
+}
+
+/* Fade in */
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #b870d2;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+/* Scale from center */
+a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+a:hover::after,
+a:focus::after{
+  transform: scale(1);
+}
+
+
+/* Avatar ANimations */
+#anchor.active{
+    /* transform:translate(20px,30px); */
+        transition: ease-in-out 0.8s;
+
+    transform: translate(-40%,50%);
+}
+
+#anchor.observer{
+    /* transform:translate(20px,30px); */
+        transition: ease-in-out 1s;
+        position: fixed;
+}
+
+
+/* HighLights, when i scroll, ill apply class which will highligh the word, like we did withh the Anchor tags */
+
+/* Fade in */
+.mark {
+  background-color: rgba(184, 112, 210, 0.3);
+  transition: background-color 1s ease-in-out;
+}
+
+.mark.highlight {
+  background-color: rgba(184, 112, 210, 0.8);
+}
+.mark.scroll-animate::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #b870d2;
+  opacity: 0;
+  transition-delay: 10s;
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Scale from center */
+.mark.scroll-animate::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: start;
+}
+
+.mark.scroll-animate:hover::after,
+.mark.scroll-animate:focus::after{
+  transform: scale(1);
+}
+
+
