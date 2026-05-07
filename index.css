@@ -2,7 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700);
 
-
+*{
+    font-family: 'inter';
+}
 
 /* AVATAR */
 .pupil{
@@ -79,7 +81,7 @@ sub{
 .flex-column{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 
@@ -255,6 +257,7 @@ section{
 #projects{
     text-align: center;
     width: 70%;
+    height: max-content;
     justify-content: space-evenly;
     flex-wrap: wrap;    
 
@@ -264,16 +267,21 @@ section{
     width: 100%;
 }
 
+#projects a{
+    text-decoration: none;
+}
+
 .card{
     width: 40%;
 
-    border:black solid 1px;
-    box-shadow: 0 0 20px #998d9d;
     height: auto;
     z-index: 2;
         border-radius: 2em;
     margin: 1em;
     overflow: hidden;
+    position: relative;
+    justify-content: flex-end;
+    
 }
 
 .card img{
@@ -285,4 +293,68 @@ section{
 .card article{
     padding: 1em;
     text-align: left;
+}
+
+.card p{
+    font-size: smaller;
+}
+
+
+
+/* Tabs */
+
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+
+.tab.active{
+    background-color: #6f006f;
+    color: white;
+    justify-content: start;
+    font-family: 'inter';
+}
+
+.tab{
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    width: 30%;
+    border: none;
+}
+
+.tech{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tech p{
+    width: max-content;
+    border: #6F0097 1px solid;
+    backdrop-filter: blur(10px);
+    border-radius: 2em;
+    padding:0.5em 1em;
+    display: inline;
+}
+
+
+
+.open-icon {
+
+  padding: 0;
+  display: inline-flex;
+  border-top: 1px gray solid;
+  width: 100%;
+}
+
+.open-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.card_content{
+    padding: 0em 1em;
 }

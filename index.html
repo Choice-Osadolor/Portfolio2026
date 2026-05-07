@@ -45,7 +45,7 @@
                  <span class="wrap"></span>
                  </a>
             </h1>            
-             <p>Frontend Developer - UX,UI Engineering</p>
+             <p>Aspiring Full-Stack Developer & UI/UX Designer</p>
             <button>View my work</button>
             </article>
 
@@ -71,11 +71,12 @@
 
                 </span>
 
-                <span class="box flex-column" >
+                <span class="box flex-column" id="education">
                     <Sub>Education: Hover for more</Sub>
                     <h2>AU Birmingham</h2>
                     <h3 style="color: rgb(160, 160, 255);">Bachelors of Science in Computer Science</h3>
                     <sub>2024-2028</sub>
+                    <img src="aston.png" alt="aston univeristy image" id="aston-img">
                 </span>
                 <span class="box flex-column" > 
                     <sub>Skills</sub>
@@ -95,42 +96,137 @@
             </article>
 
         
-            <div class="card">
+            <div class="card flex-column">
                 <img src="veltrix.png" alt="Project 1">
-                <article>
+                <div class="card_content">
+                    <article>
                     <h3>Veltrix</h3>
                     <p>Digital Gaming Hub and Marketplace</p>
-                </article>
-                <span class="tags">React, Node.js, MongoDB</span>
+                </article>            
+
+                    <div data-tabs>
+
+                        <button class="tab active" data-target=".scope"   onclick="event.stopPropagation()"> Scope</button>
+                         <button class="tab" data-target=".tech"  onclick="event.stopPropagation()"> Tech</button>
+                         
+                    <article>
+                        <span class="panel scope active"> Gaming marketplace platform featuring interactive 3D visuals, product browsing, and AI-powered assistance integrated through the Claude API.</span>
+                        <span class="panel tech flex-row"> 
+                            <p>Laravel</p>
+                            <p>PHP</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>Python</p>
+                            <p>SQL</p>
+                        </span>
+                    </article>
+                                <a class="open-icon" target="_blank" href=""><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
+                    
+                </div>
+            </div>            
             </div>
-           
-            <div class="card">
+   
+
+            <!-- <div class="card">
                 <img src="deal.png" alt="Project 2">
                 <article>
                     <h3>Deal!</h3>
                     <p>Multiplayer card web game</p>
                 </article>
-                <span class="tags">HTML, CSS, JavaScript</span>
-            </div>
+                    <div data-tabs>
+
+                        <button class="tab active" data-target=".scope"> Scope</button>
+                         <button class="tab" data-target=".tech"> Tech</button>
+                         
+                    <article>
+                        <span class="panel scope active"> Full-stack deployed app; AI chatbot via Claude API.</span>
+                        <span class="panel tech"> Blender, HTML, CSS, Three.js</span>
+                    </article>
+
+                    </div>            
+            </div> -->
 
             <div class="card">
                 <img src="EcoLens.png" alt="Project 3">
-                <article>
-                    <h3>EcoLens</h3>
-                    <p>Sustainability Shopping Assistant App prototype</p>
-                </article>
-                <span class="tags">Figma</span>
-            </div>
 
-            <div class="card">
-                    <img src="Pomdoro.png" alt="Project 4">
+                <div class="card_content">
+                    <article>
+                        <h3>EcoLens</h3>
+                        <p>Sustainability Shopping Assistant App prototype</p>
+                 </article>
+                    <div data-tabs>
+
+                        <button class="tab active" data-target=".scope"> Scope</button>
+                         <button class="tab" data-target=".tech"> Tech</button>
+                         
+                    <article>
+                        <span class="panel scope active">Mobile shopping assistant prototype focused on sustainable purchasing decisions, accessibility, and intuitive eco-conscious user experiences.</span>
+                        <span class="panel tech flex-row"> 
+                            <p>Figma</p>
+                            <p>Prototyping</p>
+                            <p>Testing</p>
+                        </span>                        
+                    </article>
+                                <a class="open-icon" target="_blank" href="https://www.figma.com/proto/mUo9qMIJ8E9nfcv9PHSK8t/Sustainability-Shopping-assistant-App-UI?node-id=269-4571&p=f&t=iqbavX84GskDQdnN-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=361%3A1793"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
+   
+                </div>
+
+                    </div>
+            </div> 
+    
+
+              <div class="card">
+                    <img src="Pomodoro.png" alt="Project 4">
+
+                    <div class="card_content">
                     <article>
                         <h3>Pomdoro</h3>
                         <p>Productivity timer application</p>
                     </article>
-                    <span class="tags">Blender, HTML,CSS, Three.js</span>
+
+
+                    <div data-tabs>
+
+                        <button class="tab active" data-target=".scope"> Scope</button>
+                         <button class="tab" data-target=".tech"> Tech</button>
+                         
+                    <article>
+                        <span class="panel scope active"> Productivity timer application designed to improve focus and task management through structured work and break sessions.</span>
+                        <span class="panel tech flex-row"> 
+                                <p>JavaScript</p>
+                                <p>CSS</p>
+                                <p>HTML</p>
+                        </span>
+                    </article>
+                                                <a class="open-icon" target="_blank" href="https://choice-osadolor.github.io/PomodoroTimer/"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
+
+                    </div>
+
+                    </div>     
+         
             </div>
         </section>
+<!-- 
+        <section id="contact" class="flex-row">
+            <h2>Lets Work Together</h2>
+
+            <form action="" class="flex-column">
+                <h3>Name</h3><input type="text">
+                <h3>Email</h3><input type="text">
+                <h3>Message</h3> <textarea name="" id=""></textarea>
+                <button>Send Message</button>
+            </form>
+
+            <div>
+                <p></p>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </section> -->
 
     </main>  
     <script src="animations.js"></script>

@@ -67,3 +67,12 @@ button[data-theme-toggle].activetoggle span{
   border-radius: 2rem;
   transition: transform 0.3s ease-in-out;
 }
+
+.card{
+  background-color: var(--color-bg);
+  border: rgb(84, 80, 80) 1px solid;
+}
+
+.open-svg path{
+    fill: var(--color-fg);
+}

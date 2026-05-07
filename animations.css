@@ -82,3 +82,51 @@ a:focus::after{
 }
 
 
+/* Porject card */
+
+.card:hover{
+  transform: scale(1.02);
+      box-shadow: 0 0 10px #490164;
+
+  transition: ease-in-out 0.5s;
+}
+
+.card{
+  transition: ease-in-out 0.5s;
+}
+
+
+
+/* About me hover anims */
+#education {
+  position: relative;
+  overflow: visible;
+}
+
+#aston-img{
+  width: 18em;
+  
+}
+#aston-img {
+  position: absolute;
+
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+
+  z-index: 100;
+}
+
+#education:hover #aston-img {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateX(-50%) translateY(0);
+}

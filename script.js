@@ -51,3 +51,47 @@ window.addEventListener('scroll',()=>{
 
 //ill convert this into a function later, and theb try it as a promise
 
+
+
+// const techtabs= document.querySelectorAll('.techtabs');
+// techtabs.forEach(tab=>{
+//     tab.addEventListener('click',()=>{
+//         const container=tab.closest('[data-tabs]');
+//        const section= container.querySelectorAll('.tech');
+//        section.forEach(sec=>{
+//         sec.classList.remove('active');
+//        });
+//     const target = tab.dataset.target;
+
+//     container.querySelector(target).classList.add('active');
+//     })
+// })
+
+const tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+
+    const container = tab.closest('[data-tabs]');
+
+    const panels = container.querySelectorAll('.panel');
+    const allTabs = container.querySelectorAll('.tab');
+
+    panels.forEach(panel => {
+      panel.classList.remove('active');
+    });
+
+    allTabs.forEach(t => {
+      t.classList.remove('active');
+    });
+
+    const target = tab.dataset.target;
+
+    container
+      .querySelector(target)
+      .classList.add('active');
+
+    tab.classList.add('active');
+  });
+});
+
