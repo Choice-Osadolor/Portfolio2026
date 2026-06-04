@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/themes.css">
 </head>
-<body>
-    <main> 
-     <button type="button" data-theme-toggle class="theme-toggle"> 
-        <span class="toggle-switch"> </span>
-     </button>
-        <header>
+<body>        
+    
+    <header>
             <a href="CV-Choice Osadolor (1).docx" download>
                 <button id="dnld">Resume 
                     <svg xmlns="http://www.w3.org/2000/svg" width="5%" height="5%" viewBox="0 0 24 24">
@@ -24,17 +21,24 @@
 
             </a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#projects">Projects</a>
+                <!-- <a class="tag" href="index.html">Home</a> -->
+                <a class="tag" href="index.html#about">About</a>
+                <a class="tag" href="index.html#projects">Projects</a>
+                <a class="tag" href="index.html#contact">Contact Me</a>
             </nav>
-        </header>
+    </header>
+
+    <main> 
+     <button type="button" data-theme-toggle class="theme-toggle"> 
+        <span class="toggle-switch"> </span>
+     </button>
+
         
         <section id="hero">
-           <div id="anchor" style="background-image: url('avatar.png');">
+           <div id="anchor" style="background-image: url('assets/avatar.png');">
            <div id="eyes"> 
-                <img class="pupil" src="eye.png" alt="pupil dot" style="left: 30%; bottom: 20%;">
-                <img class="pupil" src="eye.png" alt="pupil dot" style="right: 21%; bottom: 26%;">
+                <img class="pupil" src="assets/eye.png" alt="pupil dot" style="left: 30%; bottom: 20%;">
+                <img class="pupil" src="assets/eye.png" alt="pupil dot" style="right: 21%; bottom: 26%;">
              </div>
            </div>
 
@@ -76,11 +80,11 @@
                     <h2>AU Birmingham</h2>
                     <h3 style="color: rgb(160, 160, 255);">Bachelors of Science in Computer Science</h3>
                     <sub>2024-2028</sub>
-                    <img src="aston.png" alt="aston univeristy image" id="aston-img">
+                    <img src="assets/aston.png" alt="aston univeristy image" id="aston-img">
                 </span>
                 <span class="box flex-column" > 
                     <sub>Skills</sub>
-                    HTML, CSS, JavaScript, Python
+                    HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, Git/GitHub, Figma, VSCode, Java, Python
                 </span>
                 
  
@@ -97,7 +101,7 @@
 
         
             <div class="card flex-column">
-                <img src="veltrix.png" alt="Project 1">
+                <img src="assets/veltrix.png" alt="Project 1">
                 <div class="card_content">
                     <article>
                     <h3>Veltrix</h3>
@@ -121,34 +125,14 @@
                             <p>SQL</p>
                         </span>
                     </article>
-                                <a class="open-icon" target="_blank" href="https://cs2team48.cs2410-web01pvm.aston.ac.uk/pages/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
+                                <a class="open-icon tag" target="_blank" href="https://cs2team48.cs2410-web01pvm.aston.ac.uk/pages/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
                     
                 </div>
             </div>            
             </div>
    
-
-            <!-- <div class="card">
-                <img src="deal.png" alt="Project 2">
-                <article>
-                    <h3>Deal!</h3>
-                    <p>Multiplayer card web game</p>
-                </article>
-                    <div data-tabs>
-
-                        <button class="tab active" data-target=".scope"> Scope</button>
-                         <button class="tab" data-target=".tech"> Tech</button>
-                         
-                    <article>
-                        <span class="panel scope active"> Full-stack deployed app; AI chatbot via Claude API.</span>
-                        <span class="panel tech"> Blender, HTML, CSS, Three.js</span>
-                    </article>
-
-                    </div>            
-            </div> -->
-
             <div class="card">
-                <img src="EcoLens.png" alt="Project 3">
+                <img src="assets/EcoLens.png" alt="Project 3">
 
                 <div class="card_content">
                     <article>
@@ -168,16 +152,15 @@
                             <p>Testing</p>
                         </span>                        
                     </article>
-                                <a class="open-icon" target="_blank" href="https://www.figma.com/proto/mUo9qMIJ8E9nfcv9PHSK8t/Sustainability-Shopping-assistant-App-UI?node-id=269-4571&p=f&t=iqbavX84GskDQdnN-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=361%3A1793"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
+                                <a class="open-icon tag" target="_blank" href="https://www.figma.com/proto/mUo9qMIJ8E9nfcv9PHSK8t/Sustainability-Shopping-assistant-App-UI?node-id=269-4571&p=f&t=iqbavX84GskDQdnN-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=361%3A1793"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
    
                 </div>
 
                     </div>
             </div> 
     
-
               <div class="card">
-                    <img src="Pomodoro.png" alt="Project 4">
+                    <img src="assets/Pomodoro.png" alt="Project 4">
 
                     <div class="card_content">
                     <article>
@@ -199,37 +182,92 @@
                                 <p>HTML</p>
                         </span>
                     </article>
-                                                <a class="open-icon" target="_blank" href="https://choice-osadolor.github.io/PomodoroTimer/"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
+                                                <a class="open-icon tag" target="_blank" href="https://choice-osadolor.github.io/PomodoroTimer/"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
 
                     </div>
 
                     </div>     
          
             </div>
-        </section>
-<!-- 
-        <section id="contact" class="flex-row">
-            <h2>Lets Work Together</h2>
 
-            <form action="" class="flex-column">
-                <h3>Name</h3><input type="text">
-                <h3>Email</h3><input type="text">
-                <h3>Message</h3> <textarea name="" id=""></textarea>
-                <button>Send Message</button>
-            </form>
+            <div class="card flex-column">
+                <img src="assets/castlehouse.png" alt="Project 4">
+                <div class="card_content">
+                    <article>
+                    <h3>Castle House Event Hall</h3>
+                    <p>Event Hall Booking Web-application</p>
+                </article>            
+
+                    <div data-tabs>
+
+                        <button class="tab active" data-target=".scope"   onclick="event.stopPropagation()"> Scope</button>
+                         <button class="tab" data-target=".tech"  onclick="event.stopPropagation()"> Tech</button>
+                         
+                    <article>
+                        <span class="panel scope active">Full-stack event-booking platform for a local venue — customer bookings, live availability calendar, secure authentication, and an admin dashboard.</span>
+                        <span class="panel tech flex-row"> 
+                            <p>MongoDB</p>
+                            <p>Node.js / Express</p>
+                            <p>Mongoose</p>
+                            <p>Render (deployment)</p>
+                            <p>Git / GitHub</p>
+                            <p>VSCode</p>
+                            <p>Figma</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </span>
+                    </article>
+                                <a class="open-icon tag" target="_blank" href="https://castlehouse-eventhallbooking.onrender.com/"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 3.75h-2.5a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-2.5m-6.5-10h5.5c.276 0 .526.112.707.293m.293 6.207v-5.5a1 1 0 0 0-.293-.707M12.75 11.25l6.5-6.5l.707-.707"/></svg>Live</a>
+                    
+                </div>
+            </div>            
+            </div>
+        </section>
+
+        <section id="contact" class="flex-column" style="align-items: center;">
+            <h2>Lets Work Together</h2>
+            <p>Ready to collaborate on your next project?</p>
+
+        <a href="mailto:choiceosaru@gmail.com?subject=Portfolio%20Enquiry">
+            <button id="contact-btn"> Lets get in touch   <svg style="transform:scaleX(-1);" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m16.219 17.114l-.51 2.959a1.164 1.164 0 0 1-2.213.093l-2.788-7.882A1.164 1.164 0 0 1 12.2 10.79l8.036 2.788a1.164 1.164 0 0 1-.116 2.234l-3.112.51a1.165 1.165 0 0 0-.79.791"/><path d="M21.502 9.314A9.726 9.726 0 1 0 9.297 21.5"/></g></svg></button>
+        </a>
 
             <div>
-                <p></p>
+                <p>Whether you're looking to discuss:</p>
                 <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Placement Opportunities</li>
+                    <li>Internship Opportunities</li>
+                    <li>Graduate & Entry-Level Technology Roles</li>
+                    <li>Website Development Projects</li>
+                    <li>Booking Systems & Web Applications</li>
+                    <li>UI/UX Design Projects</li>
+                    <li>Technology Collaborations</li>
                 </ol>
+                <p>I'd love to hear from you.</p>
             </div>
-        </section> -->
+        </section>
 
-    </main>  
-    <script src="animations.js"></script>
-    <script src="script.js"></script>
+    </main> 
+     
+    <footer class="flex-column">
+        <h3 style="align-self: center;">Choice Osadolor</h3>
+
+        <p style="align-self: center;">Computer Science Student & Aspiring Software Developer</p>
+
+        <div>
+            <a href="mailto:your@email.com">Email</a>
+            <!-- <a href="https://linkedin.com/...">LinkedIn</a> -->
+            <a href="https://github.com/Choice-Osadolor">GitHub</a>
+        </div>
+
+        <p>© 2026 Choice Osadolor</p>
+    </footer>
+
+     <a  style="position: fixed; bottom: 0%; z-index: 200; bottom: 5%; left: 46%;" href="#hero"><button id="scroll-up-btn" style="font-size: 2em; border-radius: 100%; width: 50px; height: 50px; text-align: center;">↑</button></a>
+
+
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

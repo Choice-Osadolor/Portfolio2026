@@ -1,10 +1,10 @@
 /* Underline styles */
-a {
+.tag {
   position: relative;
 }
 
 /* Fade in */
-a::after {
+.tag::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -18,14 +18,14 @@ a::after {
 
 
 /* Scale from center */
-a::after {
+.tag::after {
   opacity: 1;
   transform: scale(0);
   transform-origin: center;
 }
 
-a:hover::after,
-a:focus::after{
+.tag:hover::after,
+.tag:focus::after{
   transform: scale(1);
 }
 
@@ -35,7 +35,7 @@ a:focus::after{
     /* transform:translate(20px,30px); */
         transition: ease-in-out 0.8s;
 
-    transform: translate(-40%,50%);
+    transform: translate(-40%,40%);
 }
 
 #anchor.observer{
@@ -129,4 +129,33 @@ a:focus::after{
   visibility: visible;
 
   transform: translateX(-50%) translateY(0);
+}
+
+
+/* Moving Gradients */
+
+
+
+
+
+/* Media Query */
+
+@media (max-width: 768px) {
+
+
+    #anchor{
+        position: relative        ;
+    }
+
+    /* Avatar ANimations */
+#anchor.active{
+    /* transform:translate(20px,30px); */
+    transform: translate(0%,0%);
+}
+
+#anchor.observer{
+    /* transform:translate(20px,30px); */
+        position: relative;
+}
+
 }

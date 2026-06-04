@@ -2,7 +2,7 @@
    --color-bg: #ffffff;
    --color-fg: #000000;
    --accent-color: #6F0097;
-   --toggle-bg: url('darkmodebg.png');
+   --toggle-bg: url('../assets/darkmodebg.png');
    --toggle-color: #000000;
 }
 
@@ -10,7 +10,7 @@
    --color-bg: #000000;
    --color-fg: #ffffff;
    --accent-color: #6F0097;
-    --toggle-bg: url('lightmodebg.png');
+    --toggle-bg: url('../assets/lightmodebg.png');
     --toggle-color: #ffffff;
 }
 
@@ -23,6 +23,12 @@ body {
 a {
   color: var(--color-fg);
 }
+
+svg ,path{
+  stroke: var(--color-fg);
+}
+
+
 
 button[data-theme-toggle] {
   background-image: var(--toggle-bg);
@@ -40,7 +46,7 @@ button[data-theme-toggle] {
   background-color: var(--color-bg);
   border: none;
   height: max-content;
-  width: 10vw;
+  width: 10em;
 
   /* Inner shadow */
   box-shadow: inset 0 0 5px var(--color-fg);
@@ -76,3 +82,40 @@ button[data-theme-toggle].activetoggle span{
 .open-svg path{
     fill: var(--color-fg);
 }
+
+#contact button{
+  --angle: 0deg;
+
+  padding: 1em 5em;
+  border-radius: 1em;
+
+  border: 2px solid transparent;
+
+  background:
+    linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+    linear-gradient(var(--angle), #6F0097,var(--color-fg)) border-box;
+
+  color: var(--color-fg);
+
+  animation: rotate 10s linear infinite;
+  transition: ease-in-out 0.3s;
+}
+
+#contact button:hover{
+  cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+  transform: translateY(-3px);
+}
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+

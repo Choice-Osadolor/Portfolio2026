@@ -1,3 +1,5 @@
+
+
 document.addEventListener('mousemove',(e) => {
 
     // mouse position
@@ -32,22 +34,30 @@ function angle(mx, my, ex, ey) {
     return rad * 180 / Math.PI;
 }
 
-let scrollY=window.scrollY;
-window.addEventListener('scroll',()=>{
-    scrollY=window.scrollY;
-    console.log(scrollY);
-    if(scrollY>50){
-         document.querySelector('#anchor').classList.add('active');
-    }
-    if(scrollY>100){
-         document.querySelector('#anchor').classList.add('observer');
-    }
+var mobileview = window.matchMedia("(max-width: 700px)");
 
-    if(scrollY==0){
-         document.querySelector('#anchor').classList.remove('active');
-    }
+if (!mobileview.matches) {
+  console.log('not mobile')
 
-})
+    window.addEventListener('scroll',()=>{
+
+        let scrollY = window.scrollY;
+
+        if(scrollY > 50){
+            document.querySelector('#anchor').classList.add('active');
+        }
+
+        if(scrollY > 100){
+            document.querySelector('#anchor').classList.add('observer');
+        }
+
+        if(scrollY == 0){
+            document.querySelector('#anchor').classList.remove('active');
+        }
+
+    });
+
+}
 
 //ill convert this into a function later, and theb try it as a promise
 
