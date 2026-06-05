@@ -64,7 +64,7 @@ main{
     align-items: center;
     height: 100%;
     position: relative;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     row-gap: 3em;
 }
 
